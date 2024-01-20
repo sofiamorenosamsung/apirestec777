@@ -1,12 +1,12 @@
-const MODO_PERSISTENCIA = 'MONGODB'      // 'MEM' o 'FILE' o 'MONGODB'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const PORT = process.env.PORT || 8080
+const MODO_PERSISTENCIA = process.env.MODO_PERSISTENCIA || 'MEM'
+const STRCNX = process.env.STRCNX || 'mongodb://127.0.0.1'
+const BASE = process.env.BASE || 'test'
 
-const STRCNX ='mongodb+srv://SofiaM:Sofia123@misbases.vvboeih.mongodb.net/?retryWrites=true&w=majority'
-
-//const STRCNX ='mongodb://127.0.0.1'
-
-const BASE ='ecommerce'
 
 export default {
     MODO_PERSISTENCIA,
