@@ -29,7 +29,7 @@ if(config.MODO_PERSISTENCIA == 'MONGODB'){
 }
 const PORT = config.PORT
 
- const server = app.listen(PORT, ()=> console.log(`Servidor  apiRestFul escuchando en http://localhost:${PORT}`))
+ const server = app.listen(PORT, ()=> console.log(`Servidor  apiRestFul Ecommerce escuchando en http://localhost:${PORT}`))
   
  server.on('error', error => console.log(`Error en servidor : ${error.message}`))
 
